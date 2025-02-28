@@ -1,0 +1,70 @@
+body {
+    background-color: whitesmoke;
+}
+
+.bg {
+    border: 1px solid black;
+    width: 1000px;
+    height: 500px;
+    background-image: url('../img/hero-bg.jpg');
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: 420px;
+    margin: auto;
+    margin-top: 120px;
+    -webkit-animation: animate-bg 5s ease-in-out infinite;
+    animation: animate-bg 5s ease-in-out infinite;
+}
+
+#border {
+    border: solid;
+    width: 450px;
+}
+
+/*--------------------------------------------------------------
+# Credits
+--------------------------------------------------------------*/
+.main-credits {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    font-size: 13px;
+    color: #fff;
+    z-index: 999999;
+  }
+  
+  @media (max-width: 992px) {
+    .main-credits {
+      justify-content: center;
+      padding: 10px;
+      background-color: rgb(0, 0, 0, 0.85);
+    }
+  }
+  
+  .main-credits img {
+    transition: 0.3s;
+    animation: credits-img 5s infinite;
+    width: 20PX;
+    height: 20px;
+  }
+  
+  @keyframes credits-img {
+    50% {
+      transform: rotateY(180deg);
+    }
+  }
+
+  #web-name{
+    font-family: "copperplate", fantasy;
+  }
